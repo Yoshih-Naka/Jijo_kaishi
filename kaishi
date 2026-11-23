@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>シニア体操クラブ オンライン会誌</title>
+<style>
+  body {
+    margin: 0;
+    padding: 16px 12px 40px;
+    background: #f4f6f0;
+    color: #292524;
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+    line-height: 1.85;
+  }
+  .magazine {
+    max-width: 680px;
+    margin: 0 auto;
+    background: #fffefa;
+    border: 1px solid #dfe5d5;
+    border-radius: 14px;
+    padding: 22px 18px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+  }
+  .meta {
+    font-size: 0.88rem;
+    color: #57634d;
+    margin-bottom: 4px;
+  }
+  h1 {
+    font-size: 1.4rem;
+    line-height: 1.45;
+    color: #2f5233;
+    margin: 0 0 16px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #dfe5d5;
+  }
+  h2 {
+    font-size: 1.18rem;
+    color: #2f5233;
+    margin: 28px 0 12px;
+    padding-left: 10px;
+    border-left: 5px solid #4d7c0f;
+  }
+
+  /* ▼ ① 先頭：チラシのイメージ図枠 ▼ */
+  .flyer-box {
+    margin: 0 0 22px;
+    background: #f7f9f2;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #dfe5d5;
+    text-align: center;
+  }
+  .flyer-box img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+
+  /* ▼ ② 次回開催予告（大きな文字＋太めの囲み） ▼ */
+  .next-event {
+    margin: 22px 0 28px;
+    padding: 18px 18px;
+    background: #fffbeb;
+    border: 3px solid #d97706;
+    border-radius: 12px;
+  }
+  .next-event-label {
+    display: inline-block;
+    background: #d97706;
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: bold;
+    padding: 4px 12px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+  .next-event-title {
+    font-size: 1.38rem;
+    font-weight: bold;
+    line-height: 1.45;
+    color: #78350f;
+    margin: 0 0 10px;
+  }
+  .next-event-detail {
+    font-size: 1.08rem;
+    line-height: 1.75;
+    color: #292524;
+    margin: 0;
+  }
+
+  /* ▼ ③ 感想・ひとこと引用枠 ▼ */
+  blockquote {
+    margin: 16px 0;
+    padding: 12px 16px;
+    background: #f7f9f2;
+    border-left: 4px solid #65a30d;
+    border-radius: 0 8px 8px 0;
+  }
+
+  /* ▼ ④ 静止画（外部URL）枠 ▼ */
+  figure {
+    margin: 18px 0;
+  }
+  figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #dfe5d5;
+  }
+  figcaption {
+    font-size: 0.88rem;
+    color: #57534e;
+    margin-top: 6px;
+  }
+
+  /* ▼ ⑤ YouTube動画埋め込み枠 ▼ */
+  .video-wrap {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin: 18px 0 8px;
+  }
+  .video-wrap iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 8px;
+  }
+  .video-caption {
+    font-size: 0.85rem;
+    color: #57534e;
+  }
+
+  .footer-note {
+    margin-top: 32px;
+    padding-top: 14px;
+    border-top: 1px dashed #cbd5c0;
+    font-size: 0.85rem;
+    color: #57634d;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <article class="magazine">
+    <div class="meta">自助グループ シニア体操クラブ オンライン会誌 ／ 2026年11月</div>
+    <h1>シニア体操クラブ 活動レポート<br><span style="font-size:0.95rem; font-weight:normal; color:#57634d;">〜自分で元気を保つための場〜</span></h1>
+
+    <!-- ▼ ① 先頭：チラシのイメージ図（postimages等の直リンクURLに差し替え） ▼ -->
+    <div class="flyer-box">
+      <img src="https://placehold.jp/24/f7f9f2/2f5233/800x420.png?text=%E3%82%B7%E3%83%8B%E3%82%A2%E4%BD%93%E6%93%8D%E3%82%AF%E3%83%A9%E3%83%96+%E3%83%81%E3%83%A9%E3%82%B7%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8%EF%BC%88%E5%A4%96%E9%83%A8URL%E8%B2%BC%E4%BB%98%EF%BC%89" alt="シニア体操クラブ チラシイメージ">
+    </div>
+
+    <!-- ▼ ② 次回開催予告（毎回10分で書き換える枠） ▼ -->
+    <section class="next-event" aria-label="次回開催予告">
+      <div class="next-event-label">次回開催のお知らせ</div>
+      <p class="next-event-title">次回：12月12日（土）13:30〜15:00</p>
+      <p class="next-event-detail">
+        <strong>会場：</strong>〇〇コミュニティスペース<br>
+        <strong>内容：</strong>みんなで楽しく！健康貯筋体操とおしゃべり<br>
+        <strong>ひとこと：</strong>無理なくご自身のペースで参加できます。初めての方も大歓迎です！
+      </p>
+    </section>
+
+    <!-- ▼ ③ 開催の感想 ▼ -->
+    <h2>今回の活動ふりかえり</h2>
+    <p>先日はお忙しいなかご参加いただき、ありがとうございました。みんなで声をかけ合いながら楽しくからだを動かし、笑顔あふれるひとときになりました。</p>
+    <blockquote>
+      「久しぶりにしっかりからだを伸ばせてスッキリした」「家でも少しずつ続けてみます」といった嬉しいお声もいただきました。
+    </blockquote>
+
+    <!-- ▼ ④ 会場の様子（静止画URL） ▼ -->
+    <h2>会場の様子（写真）</h2>
+    <figure>
+      <img src="https://placehold.jp/24/e7e5e4/44403c/800x500.png?text=%E4%BD%93%E6%93%8D%E3%82%AF%E3%83%A9%E3%83%96%E3%81%AE%E6%A7%98%E5%AD%90%EF%BC%88%E5%A4%96%E9%83%A8URL%E3%81%8B%E3%82%89%E8%A1%A8%E7%A4%BA%EF%BC%89" alt="体操クラブの様子">
+      <figcaption>当日の体操の様子（postimages等の直リンクURLを貼るだけで表示されます）</figcaption>
+    </figure>
+
+    <!-- ▼ ⑤ おうちでの復習用動画（ひの健幸貯筋体操） ▼ -->
+    <h2>おうちで一緒に！体操動画</h2>
+    <p>次回までのあいだ、ご自宅でも無理のない範囲でからだを動かしてみましょう。</p>
+    <div class="video-wrap">
+      <iframe
+        src="https://www.youtube.com/embed/n8VlKRMtagU"
+        title="ひの健幸貯筋体操"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div class="video-caption">動画：ひの健幸貯筋体操（日野市広報）</div>
+
+    <div class="footer-note">
+      ※ これはレイアウト確認用のサンプル画面です。写真や次回日程はいつでも差し替えられます。
+    </div>
+  </article>
+</body>
+</html>
