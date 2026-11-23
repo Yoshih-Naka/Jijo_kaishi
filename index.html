@@ -27,6 +27,12 @@
     color: #57634d;
     margin-bottom: 4px;
   }
+  .issue-date {
+    font-size: 0.92rem;
+    font-weight: bold;
+    color: #2f5233;
+    margin: 0 0 10px;
+  }
   h1 {
     font-size: 1.4rem;
     line-height: 1.45;
@@ -43,7 +49,6 @@
     border-left: 5px solid #4d7c0f;
   }
 
-  /* ▼ ① 先頭：チラシのイメージ図枠 ▼ */
   .flyer-box {
     margin: 0 0 22px;
     background: #f7f9f2;
@@ -59,7 +64,6 @@
     border-radius: 6px;
   }
 
-  /* ▼ ② 次回開催予告（大きな文字＋太めの囲み） ▼ */
   .next-event {
     margin: 22px 0 28px;
     padding: 18px 18px;
@@ -84,6 +88,10 @@
     color: #78350f;
     margin: 0 0 10px;
   }
+  .next-event-time {
+    display: inline-block;
+    padding-left: 3.4em;
+  }
   .next-event-detail {
     font-size: 1.08rem;
     line-height: 1.75;
@@ -91,7 +99,6 @@
     margin: 0;
   }
 
-  /* ▼ ③ 感想・ひとこと引用枠 ▼ */
   blockquote {
     margin: 16px 0;
     padding: 12px 16px;
@@ -100,7 +107,6 @@
     border-radius: 0 8px 8px 0;
   }
 
-  /* ▼ ④ 静止画（外部URL）枠 ▼ */
   figure {
     margin: 18px 0;
   }
@@ -117,7 +123,6 @@
     margin-top: 6px;
   }
 
-  /* ▼ ⑤ YouTube動画埋め込み枠 ▼ */
   .video-wrap {
     width: 100%;
     aspect-ratio: 16 / 9;
@@ -146,40 +151,39 @@
 </head>
 <body>
   <article class="magazine">
-    <div class="meta">自助グループ シニア体操クラブ オンライン会誌 ／ 2026年11月</div>
+    <div class="meta">自助グループ シニア体操クラブ オンライン会誌</div>
+    <p class="issue-date">2026年11月22日(日)</p>
     <h1>シニア体操クラブ 活動レポート<br><span style="font-size:0.95rem; font-weight:normal; color:#57634d;">〜自分で元気を保つための場〜</span></h1>
 
-    <!-- ▼ ① 先頭：チラシのイメージ図（postimages等の直リンクURLに差し替え） ▼ -->
     <div class="flyer-box">
-      <img src="https://placehold.jp/24/f7f9f2/2f5233/800x420.png?text=%E3%82%B7%E3%83%8B%E3%82%A2%E4%BD%93%E6%93%8D%E3%82%AF%E3%83%A9%E3%83%96+%E3%83%81%E3%83%A9%E3%82%B7%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8%EF%BC%88%E5%A4%96%E9%83%A8URL%E8%B2%BC%E4%BB%98%EF%BC%89" alt="シニア体操クラブ チラシイメージ">
+      <img src="flyer.jpg" alt="自助グループ シニア体操クラブ 〜自分で元気を保つための場〜 チラシイメージ">
     </div>
 
-    <!-- ▼ ② 次回開催予告（毎回10分で書き換える枠） ▼ -->
     <section class="next-event" aria-label="次回開催予告">
       <div class="next-event-label">次回開催のお知らせ</div>
-      <p class="next-event-title">次回：12月12日（土）13:30〜15:00</p>
+      <p class="next-event-title">
+        次回: 12月27日(日)<br>
+        <span class="next-event-time">13:30 ～ 15:30</span>
+      </p>
       <p class="next-event-detail">
-        <strong>会場：</strong>〇〇コミュニティスペース<br>
+        <strong>会場:</strong> 福祉カフェ・リハビリサロン 1階<br>
         <strong>内容：</strong>みんなで楽しく！健康貯筋体操とおしゃべり<br>
         <strong>ひとこと：</strong>無理なくご自身のペースで参加できます。初めての方も大歓迎です！
       </p>
     </section>
 
-    <!-- ▼ ③ 開催の感想 ▼ -->
     <h2>今回の活動ふりかえり</h2>
     <p>先日はお忙しいなかご参加いただき、ありがとうございました。みんなで声をかけ合いながら楽しくからだを動かし、笑顔あふれるひとときになりました。</p>
     <blockquote>
       「久しぶりにしっかりからだを伸ばせてスッキリした」「家でも少しずつ続けてみます」といった嬉しいお声もいただきました。
     </blockquote>
 
-    <!-- ▼ ④ 会場の様子（静止画URL） ▼ -->
     <h2>会場の様子（写真）</h2>
     <figure>
-      <img src="https://placehold.jp/24/e7e5e4/44403c/800x500.png?text=%E4%BD%93%E6%93%8D%E3%82%AF%E3%83%A9%E3%83%96%E3%81%AE%E6%A7%98%E5%AD%90%EF%BC%88%E5%A4%96%E9%83%A8URL%E3%81%8B%E3%82%89%E8%A1%A8%E7%A4%BA%EF%BC%89" alt="体操クラブの様子">
-      <figcaption>当日の体操の様子（postimages等の直リンクURLを貼るだけで表示されます）</figcaption>
+      <img src="activity.jpg" alt="体操クラブの様子">
+      <figcaption>当日の体操の様子</figcaption>
     </figure>
 
-    <!-- ▼ ⑤ おうちでの復習用動画（ひの健幸貯筋体操） ▼ -->
     <h2>おうちで一緒に！体操動画</h2>
     <p>次回までのあいだ、ご自宅でも無理のない範囲でからだを動かしてみましょう。</p>
     <div class="video-wrap">
@@ -193,7 +197,7 @@
     <div class="video-caption">動画：ひの健幸貯筋体操（日野市広報）</div>
 
     <div class="footer-note">
-      ※ これはレイアウト確認用のサンプル画面です。写真や次回日程はいつでも差し替えられます。
+      ※ 個人情報は掲載せず、安心してご覧いただけるよう運用しています。
     </div>
   </article>
 </body>
